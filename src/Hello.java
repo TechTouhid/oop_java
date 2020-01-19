@@ -1,6 +1,6 @@
 public class Hello {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println("Hello World");
         System.out.println("Hello World");
         System.out.println("Hello World");
@@ -13,11 +13,11 @@ public class Hello {
         byte mybyte = 10;
         short myshort = 20;
         long mylong = 5000L;
-        System.out.println(mylong + 10*(mybyte + myshort + myfirstvar));
+        System.out.println(mylong + 10 * (mybyte + myshort + myfirstvar));
 
         // the numbers can be separate using underscore
         // for float need to use f for double need to use d
-        float myfolat =5.488_554_546_48f;
+        float myfolat = 5.488_554_546_48f;
         double mydouble = 5.44d;
         boolean mybool = true;
 
@@ -30,10 +30,6 @@ public class Hello {
         char mychar = 'A';
         char unichar = '\u00A9';
         System.out.println("Unicode character " + unichar);
-
-
-
-
 
 
     }
