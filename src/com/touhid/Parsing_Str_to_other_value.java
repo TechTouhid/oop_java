@@ -1,3 +1,5 @@
+package com.touhid;
+
 public class Parsing_Str_to_other_value {
     public static void main(String[] args) {
         String numberAsString = "2020";

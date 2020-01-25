@@ -1,11 +1,13 @@
+package com.touhid;
+
 public class Hello {
 
     public static void main(String[] args) {
-        System.out.println("Hello World");
-        System.out.println("Hello World");
-        System.out.println("Hello World");
-        System.out.println("Hello World");
-        System.out.println("Hello World");
+        System.out.println("com.touhid.Hello World");
+        System.out.println("com.touhid.Hello World");
+        System.out.println("com.touhid.Hello World");
+        System.out.println("com.touhid.Hello World");
+        System.out.println("com.touhid.Hello World");
 
         int myfirstvar = 50;
         System.out.println(myfirstvar);

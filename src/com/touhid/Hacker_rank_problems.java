@@ -1,3 +1,5 @@
+package com.touhid;
+
 import java.util.Scanner;
 
 public class Hacker_rank_problems {

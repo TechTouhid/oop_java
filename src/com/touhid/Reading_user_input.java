@@ -1,3 +1,5 @@
+package com.touhid;
+
 import java.util.Scanner;
 
 public class Reading_user_input {

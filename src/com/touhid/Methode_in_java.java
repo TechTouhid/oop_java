@@ -1,3 +1,5 @@
+package com.touhid;
+
 public class Methode_in_java {
 
 
