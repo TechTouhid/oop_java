@@ -8,6 +8,23 @@ public class Account {
     private String customerEmainAddress;
     private String customerPhoneNumber;
 
+    // Created constructor method
+    public Account() {
+        // call a constructor form another constructor
+        this("456", 10.3, "Default Name", "Default Email", "Default Phone");
+        System.out.println("Constructor has been created!!");
+    }
+
+    // Overloading constructor method
+    public Account(String number, double balance, String customerName, String customerEmainAddress, String customerPhoneNumber) {
+        System.out.println("Account constructor with parameters called");
+        this.number = number;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.customerEmainAddress = customerEmainAddress;
+        this.customerPhoneNumber = customerPhoneNumber;
+    }
+
     public void deposit(double depositAmount) {
         this.balance += depositAmount;
         System.out.println("Deposit of " + depositAmount + "made. New balance is " + this.balance);
