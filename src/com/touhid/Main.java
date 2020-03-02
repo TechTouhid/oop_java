@@ -27,12 +27,19 @@ public class Main {
 //        System.out.println(person3.getName());
 
         // Object from the Animal and Dog class
-        Animal animal = new Animal("Animal", 1, 1, 5, 5);
+//        Animal animal = new Animal("Animal", 1, 1, 5, 5);
+//
+//        Dog dog = new Dog("Yorkie", 8, 20, 2, 4, 1, "long silky");
+//        dog.eat(); // calling the eat function from the Animal class
+//        System.out.println();
+//        dog.walk();
+//        dog.run();
 
-        Dog dog = new Dog("Yorkie", 8, 20, 2, 4, 1, "long silky");
-        dog.eat(); // calling the eat function from the Animal class
-        System.out.println();
-        dog.walk();
-        dog.run();
+        // inheritance challenge
+        Outlander outlander = new Outlander(36);
+        outlander.steer(45);
+        outlander.accelerator(30);
+        outlander.accelerator(20);
+        outlander.accelerator(-42);
     }
 }
