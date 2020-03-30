@@ -36,10 +36,25 @@ public class Main {
 //        dog.run();
 
         // inheritance challenge
-        Outlander outlander = new Outlander(36);
-        outlander.steer(45);
-        outlander.accelerator(30);
-        outlander.accelerator(20);
-        outlander.accelerator(-42);
+//        Outlander outlander = new Outlander(36);
+//        outlander.steer(45);
+        
+//        outlander.accelerator(30);
+//        outlander.accelerator(20);
+//        outlander.accelerator(-42);
+
+        // Composition OOP part
+        Dimensions dimensions = new Dimensions(20, 20, 5);
+        Case theCase = new Case("220B", "Dell", "240", dimensions);
+
+        Monitor theMonitor = new Monitor("27Inch Beast", "Acer", 27, new Resolution(2540,1440) );
+        Motherboard theMotherboard = new Motherboard("BJ-200", "Asus", 4, 6, "v2.44");
+
+        // Ths process to call the functions and objects form the other class
+        PC thePc = new PC(theCase, theMonitor, theMotherboard);
+        thePc.powerUp();
+
+
+
     }
 }
