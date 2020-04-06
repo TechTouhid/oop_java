@@ -43,18 +43,27 @@ public class Main {
 //        outlander.accelerator(20);
 //        outlander.accelerator(-42);
 
-        // Composition OOP part
-        Dimensions dimensions = new Dimensions(20, 20, 5);
-        Case theCase = new Case("220B", "Dell", "240", dimensions);
+//        // Composition OOP part
+//        Dimensions dimensions = new Dimensions(20, 20, 5);
+//        Case theCase = new Case("220B", "Dell", "240", dimensions);
+//
+//        Monitor theMonitor = new Monitor("27Inch Beast", "Acer", 27, new Resolution(2540,1440) );
+//        Motherboard theMotherboard = new Motherboard("BJ-200", "Asus", 4, 6, "v2.44");
+//
+//        // Ths process to call the functions and objects form the other class
+//        PC thePc = new PC(theCase, theMonitor, theMotherboard);
+//        thePc.powerUp();
 
-        Monitor theMonitor = new Monitor("27Inch Beast", "Acer", 27, new Resolution(2540,1440) );
-        Motherboard theMotherboard = new Motherboard("BJ-200", "Asus", 4, 6, "v2.44");
+        Wall wall1 = new Wall("West" );
+        Wall wall2 = new Wall("Est" );
+        Wall wall3 = new Wall("South" );
+        Wall wall4 = new Wall("North" );
 
-        // Ths process to call the functions and objects form the other class
-        PC thePc = new PC(theCase, theMonitor, theMotherboard);
-        thePc.powerUp();
-
-
-
+        Ceiling ceiling = new Ceiling(12, 55);
+        Bed bed = new Bed("Modern", 4, 3, 2, 1);
+        Lamp lamp = new Lamp("Classic", false, 75);
+        Bedroom bedroom = new Bedroom("Touhid", wall1, wall2, wall3, wall4, ceiling, bed, lamp);
+        bedroom.makeBed();
+        bedroom.getLamp().turnOn();
     }
 }
